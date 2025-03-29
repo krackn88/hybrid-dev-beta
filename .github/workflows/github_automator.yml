@@ -1,0 +1,37 @@
+name: GitHub Repository Automator
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'  # Run every 15 minutes
+  push:
+    branches: [ main ]
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+  issues:
+    types: [opened, edited, closed, reopened]
+  issue_comment:
+    types: [created, edited]
+
+jobs:
+  automate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pygithub pyyaml requests
+        
+    - name: Run automation script
+      run: |
+        chmod +x ./github_automator.sh
+        ./github_automator.sh action
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

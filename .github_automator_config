@@ -1,0 +1,5 @@
+POLLING_INTERVAL=300
+# Add your repository details below
+REPO_OWNER=krackn88
+REPO_NAME=hybrid-dev-beta
+WEBHOOK_ENABLED=false

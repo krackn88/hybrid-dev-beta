@@ -28,3 +28,59 @@
 2025-03-29 11:12:03,765 - INFO - No new commits detected
 2025-03-29 11:22:04,092 - INFO - No new commits detected
 2025-03-29 11:32:04,279 - INFO - No new commits detected
+2025-03-29 11:42:04,482 - INFO - New commit detected: ec1804576a5a1888d95deeda77dc732210fba15f
+2025-03-29 11:42:04,482 - INFO - Updating existing repository at /home/krackn/hybrid-dev-beta
+2025-03-29 11:42:05,397 - INFO - Repository updated successfully
+2025-03-29 11:42:05,397 - INFO - Building VSCode extension
+2025-03-29 11:42:09,916 - ERROR - Error building VSCode extension: 
+2025-03-29 11:52:10,154 - INFO - No new commits detected
+2025-03-29 12:02:10,415 - INFO - No new commits detected
+2025-03-29 12:02:10,415 - INFO - Checking for local changes to commit
+2025-03-29 12:02:11,288 - INFO - Changes committed and pushed successfully
+2025-03-29 12:12:11,473 - INFO - New commit detected: 30d4c41269b9ec10af7a89f0a66d97f5a2bc8add
+2025-03-29 12:12:11,473 - INFO - Updating existing repository at /home/krackn/hybrid-dev-beta
+2025-03-29 12:12:11,694 - INFO - Repository updated successfully
+2025-03-29 12:12:11,694 - INFO - Building VSCode extension
+2025-03-29 12:12:15,261 - ERROR - Error building VSCode extension: 
+2025-03-29 12:22:15,554 - INFO - No new commits detected
+2025-03-29 12:32:15,797 - INFO - No new commits detected
+2025-03-29 12:42:15,992 - INFO - No new commits detected
+2025-03-29 12:52:16,187 - INFO - No new commits detected
+2025-03-29 13:02:16,424 - INFO - No new commits detected
+2025-03-29 13:02:16,424 - INFO - Checking for local changes to commit
+2025-03-29 13:02:16,444 - INFO - No changes to commit
+2025-03-29 13:12:16,630 - INFO - No new commits detected
+2025-03-29 13:12:16,631 - INFO - Checking for local changes to commit
+2025-03-29 13:12:16,647 - INFO - No changes to commit
+2025-03-29 13:22:16,852 - INFO - No new commits detected
+2025-03-29 13:22:16,852 - INFO - Checking for local changes to commit
+2025-03-29 13:22:16,868 - INFO - No changes to commit
+2025-03-29 13:32:17,183 - INFO - No new commits detected
+2025-03-29 13:32:17,183 - INFO - Checking for local changes to commit
+2025-03-29 13:32:17,200 - INFO - No changes to commit
+2025-03-29 13:42:17,380 - INFO - No new commits detected
+2025-03-29 13:42:17,380 - INFO - Checking for local changes to commit
+2025-03-29 13:42:17,397 - INFO - No changes to commit
+2025-03-29 13:52:17,752 - INFO - No new commits detected
+2025-03-29 13:52:17,752 - INFO - Checking for local changes to commit
+2025-03-29 13:52:17,768 - INFO - No changes to commit
+2025-03-29 14:02:18,071 - INFO - No new commits detected
+2025-03-29 14:02:18,071 - INFO - Checking for local changes to commit
+2025-03-29 14:02:18,087 - INFO - No changes to commit
+2025-03-29 14:12:18,327 - INFO - No new commits detected
+2025-03-29 14:12:18,327 - INFO - Checking for local changes to commit
+2025-03-29 14:12:18,448 - INFO - No changes to commit
+2025-03-29 14:22:18,629 - INFO - No new commits detected
+2025-03-29 14:22:18,629 - INFO - Checking for local changes to commit
+2025-03-29 14:22:18,646 - INFO - No changes to commit
+2025-03-29 14:32:18,917 - INFO - No new commits detected
+2025-03-29 14:32:18,922 - INFO - Checking for local changes to commit
+2025-03-29 14:32:19,083 - INFO - No changes to commit
+2025-03-29 14:42:24,172 - INFO - No new commits detected
+2025-03-29 14:42:24,359 - INFO - Checking for local changes to commit
+2025-03-29 14:42:39,327 - INFO - No changes to commit
+2025-03-29 14:52:58,241 - INFO - No new commits detected
+2025-03-29 14:52:59,678 - INFO - Checking for local changes to commit
+2025-03-29 14:53:36,150 - INFO - No changes to commit
+2025-03-29 15:05:27,065 - ERROR - Error getting latest commit: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /repos/krackn88/hybrid-dev-beta/branches/main (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7c4c413bb6e0>: Failed to resolve 'api.github.com' ([Errno -2] Name or service not known)"))
+2025-03-29 15:05:42,106 - WARNING - Failed to get latest commit SHA, will retry next interval
