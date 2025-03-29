@@ -5,12 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hybrid UI Workbench</title>
   <link rel="stylesheet" href="dark-theme.css">
+  <link rel="stylesheet" href="responsive-layout.css">
+  <link rel="stylesheet" href="branding.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/material.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/xterm/4.14.1/xterm.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/javascript/javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/edit/closebrackets.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xterm/4.14.1/xterm.min.js"></script>
+  <script src="editor.js"></script>
+  <script src="terminal.js"></script>
 </head>
 <body>
   <header>
     <h1>Hybrid UI Workbench</h1>
   </header>
   <main>
+    <textarea id="code-editor">// Write your code here...</textarea>
+    <div id="terminal"></div>
     <button>Click Me</button>
     <p>Welcome to the Hybrid UI Workbench!</p>
   </main>
