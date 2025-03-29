@@ -18,6 +18,18 @@
       {
         "command": "hybrid.helloWorld",
         "title": "Hello World"
+      },
+      {
+        "command": "hybrid.runTests",
+        "title": "Run Tests"
+      },
+      {
+        "command": "hybrid.buildProject",
+        "title": "Build Project"
+      },
+      {
+        "command": "hybrid.showStatus",
+        "title": "Show Hybrid Status"
       }
     ]
   },
