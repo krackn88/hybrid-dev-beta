@@ -1,0 +1,14 @@
+t=2025-03-29T10:33:46-0400 lvl=info msg="no configuration paths supplied"
+t=2025-03-29T10:33:46-0400 lvl=info msg="using configuration at default config path" path=/home/krackn/.config/ngrok/ngrok.yml
+t=2025-03-29T10:33:46-0400 lvl=info msg="open config file" path=/home/krackn/.config/ngrok/ngrok.yml err=nil
+t=2025-03-29T10:33:46-0400 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040 allow_hosts=[]
+t=2025-03-29T10:33:46-0400 lvl=info msg="client session established" obj=tunnels.session
+t=2025-03-29T10:33:46-0400 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2025-03-29T10:33:46-0400 lvl=info msg="started tunnel" obj=tunnels name=command_line addr=http://localhost:8000 url=https://1257-2600-2b00-a262-ff00-f43f-fd5e-77af-f19.ngrok-free.app
+t=2025-03-29T10:33:51-0400 lvl=info msg=start pg=/api/tunnels id=c6de0fd8bd7f6f23
+t=2025-03-29T10:33:51-0400 lvl=info msg=end pg=/api/tunnels id=c6de0fd8bd7f6f23 status=200 dur=182.974µs
+t=2025-03-29T10:33:52-0400 lvl=info msg="join connections" obj=join id=92787796333a l=127.0.0.1:8000 r=140.82.115.204:19670
+t=2025-03-29T10:33:52-0400 lvl=info msg="join connections" obj=join id=b58ab73597ac l=127.0.0.1:8000 r=140.82.115.201:55534
+t=2025-03-29T10:56:57-0400 lvl=info msg="join connections" obj=join id=5f2cdeb5befa l=127.0.0.1:8000 r=149.154.161.249:38056
+t=2025-03-29T10:57:57-0400 lvl=info msg="join connections" obj=join id=4baf4eb7f965 l=127.0.0.1:8000 r=149.154.161.203:38640
+t=2025-03-29T11:36:36-0400 lvl=info msg="join connections" obj=join id=a689aab1d2d0 l=127.0.0.1:8000 r=140.82.115.204:35124
