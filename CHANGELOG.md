@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased] - 2025-03-29 11:36:26
+
+### Fixed
+- Fixed TypeScript error in VSCode extension
+- Corrected webhook integration
+- Updated repository sync automation
+
+
 ## [Unreleased]
 
 ### Added

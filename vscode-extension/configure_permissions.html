@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configure Permissions</title>
+  <link rel="stylesheet" href="dark-theme.css">
+  <link rel="stylesheet" href="responsive-layout.css">
+  <link rel="stylesheet" href="branding.css">
+</head>
+<body>
+  <header>
+    <h1>Configure Permissions</h1>
+  </header>
+  <main>
+    <form id="config-form">
+      <label for="user">User:</label>
+      <input type="text" id="user" name="user">
+      <label for="role">Role:</label>
+      <select id="role" name="role">
+        <option value="admin">Admin</option>
+        <option value="user">User</option>
+      </select>
+      <button type="submit">Update Role</button>
+    </form>
+    <div id="message"></div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Hybrid Dev Beta</p>
+  </footer>
+  <script src="configure_permissions.js"></script>
+</body>
+</html>

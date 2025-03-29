@@ -1,0 +1,30 @@
+2025-03-29 11:00:01,643 - ERROR - GITHUB_TOKEN environment variable is required
+2025-03-29 11:00:30,252 - ERROR - GITHUB_TOKEN environment variable is required
+2025-03-29 11:01:29,290 - INFO - Starting GitHub polling service
+2025-03-29 11:01:29,290 - INFO - Repository: krackn88/hybrid-dev-beta
+2025-03-29 11:01:29,290 - INFO - Branch: main
+2025-03-29 11:01:29,290 - INFO - Local path: /home/krackn/hybrid-dev-beta
+2025-03-29 11:01:29,290 - INFO - Poll interval: 300 seconds
+2025-03-29 11:01:29,290 - INFO - Auto-commit: True
+2025-03-29 11:01:29,290 - INFO - Auto-commit interval: 30 minutes
+2025-03-29 11:01:29,479 - INFO - New commit detected: 75201a2ad804507ac9b25b5d1ff81af552d873ff
+2025-03-29 11:01:29,479 - INFO - Updating existing repository at /home/krackn/hybrid-dev-beta
+2025-03-29 11:01:29,737 - INFO - Repository updated successfully
+2025-03-29 11:01:29,738 - INFO - Building VSCode extension
+2025-03-29 11:01:33,471 - ERROR - Error building VSCode extension: 
+2025-03-29 11:01:56,107 - INFO - Polling service stopped by user
+2025-03-29 11:01:59,806 - INFO - Starting GitHub polling service
+2025-03-29 11:01:59,806 - INFO - Repository: krackn88/hybrid-dev-beta
+2025-03-29 11:01:59,806 - INFO - Branch: main
+2025-03-29 11:01:59,806 - INFO - Local path: /home/krackn/hybrid-dev-beta
+2025-03-29 11:01:59,806 - INFO - Poll interval: 600 seconds
+2025-03-29 11:01:59,806 - INFO - Auto-commit: True
+2025-03-29 11:01:59,806 - INFO - Auto-commit interval: 60 minutes
+2025-03-29 11:02:00,038 - INFO - New commit detected: 75201a2ad804507ac9b25b5d1ff81af552d873ff
+2025-03-29 11:02:00,038 - INFO - Updating existing repository at /home/krackn/hybrid-dev-beta
+2025-03-29 11:02:00,266 - INFO - Repository updated successfully
+2025-03-29 11:02:00,266 - INFO - Building VSCode extension
+2025-03-29 11:02:03,540 - ERROR - Error building VSCode extension: 
+2025-03-29 11:12:03,765 - INFO - No new commits detected
+2025-03-29 11:22:04,092 - INFO - No new commits detected
+2025-03-29 11:32:04,279 - INFO - No new commits detected
