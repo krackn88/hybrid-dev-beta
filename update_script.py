@@ -20,20 +20,33 @@ g = Github(token)
 repo_name = "krackn88/hybrid-dev-beta"
 repo = g.get_repo(repo_name)
 
-# Fetch new changes from both repos and merge
-logging.info("Pulling changes from kracknai_badapple repository...")
-run_command("git pull https://github.com/krackn88/kracknai_badapple.git main")
+# Correct repository URLs
+repo_urls = {
+    "kracknai_badapple": "https://github.com/krackn88/kracknai_badapple.git",
+    "anthropic-quickstarts": "https://github.com/anthropics/anthropic-quickstarts.git"
+}
 
-logging.info("Pulling changes from anthropic-quickstarts repository...")
-run_command("git pull https://github.com/anthropics/anthropic-quickstarts.git main")
+# Fetch new changes from both repos and merge
+for repo_key, repo_url in repo_urls.items():
+    logging.info(f"Pulling changes from {repo_key} repository...")
+    try:
+        run_command(f"git pull {repo_url} main")
+    except Exception as e:
+        logging.error(f"Failed to pull changes from {repo_url}: {e}")
 
 # Merge changes and handle any conflicts
 logging.info("Merging changes...")
-run_command("git merge --no-edit")
+try:
+    run_command("git merge --no-edit")
+except Exception as e:
+    logging.error(f"Failed to merge changes: {e}")
 
 # Commit and push the changes
 logging.info("Pushing changes to the repository...")
-run_command("git add .")
-run_command("git commit -m 'Automated update'")
-run_command("git push")
-logging.info("Update completed successfully.")
+try:
+    run_command("git add .")
+    run_command("git commit -m 'Automated update'")
+    run_command("git push")
+    logging.info("Update completed successfully.")
+except Exception as e:
+    logging.error(f"Failed to push changes: {e}")
