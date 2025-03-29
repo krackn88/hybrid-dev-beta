@@ -2,13 +2,18 @@
   "name": "vscode-hybrid-extension",
   "displayName": "Hybrid Extension",
   "description": "A VSCode extension for the Hybrid project.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "krackn88",
   "engines": {
     "vscode": "^1.60.0"
   },
   "categories": ["Other"],
-  "activationEvents": ["onCommand:hybrid.helloWorld"],
+  "activationEvents": [
+    "onCommand:hybrid.helloWorld",
+    "onCommand:hybrid.runTests",
+    "onCommand:hybrid.buildProject",
+    "onView:hybrid.sidebar"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
@@ -18,23 +23,47 @@
       },
       {
         "command": "hybrid.runTests",
-        "title": "Run Tests"
+        "title": "Run Hybrid Tests"
       },
       {
         "command": "hybrid.buildProject",
-        "title": "Build Project"
+        "title": "Build Hybrid Project"
+      },
+      {
+        "command": "hybrid.showStatus",
+        "title": "Show Hybrid Status"
       }
-    ]
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "hybrid-sidebar",
+          "title": "Hybrid Tools",
+          "icon": "resources/icon.png"
+        }
+      ]
+    },
+    "views": {
+      "hybrid-sidebar": [
+        {
+          "id": "hybrid.sidebar",
+          "name": "Hybrid Controls"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "test": "node ./out/test/runTest.js",
     "package": "vsce package"
   },
   "devDependencies": {
     "@types/node": "^16.11.7",
     "@types/vscode": "^1.60.0",
+    "@vscode/test-electron": "^2.1.2",
     "typescript": "^4.5.5",
     "vsce": "^2.7.0"
   }
