@@ -1,0 +1,41 @@
+{
+  "name": "vscode-hybrid-extension",
+  "displayName": "Hybrid Extension",
+  "description": "A VSCode extension for the Hybrid project.",
+  "version": "0.0.1",
+  "publisher": "krackn88",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": ["onCommand:hybrid.helloWorld"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "hybrid.helloWorld",
+        "title": "Hello World"
+      },
+      {
+        "command": "hybrid.runTests",
+        "title": "Run Tests"
+      },
+      {
+        "command": "hybrid.buildProject",
+        "title": "Build Project"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "@types/vscode": "^1.60.0",
+    "typescript": "^4.5.5",
+    "vsce": "^2.7.0"
+  }
+}
