@@ -2,6 +2,7 @@ import os
 import requests
 import logging
 from provider_interface import ProviderInterface
+from config import config
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -23,7 +24,7 @@ class ClaudeProvider(ProviderInterface):
             "frequency_penalty": 0,
             "presence_penalty": 0
         }
-        response = requests.post(f"{ANTHROPIC_API_URL}/completions", headers=headers, json(data))
+        response = requests.post(f"{ANTHROPIC_API_URL}/completions", headers=headers, json=data)
         if response.status_code == 200:
             logging.info("Claude completions retrieved successfully.")
             return response.json()

@@ -2,6 +2,7 @@ import os
 import requests
 import logging
 from provider_interface import ProviderInterface
+from config import config
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
