@@ -6,3 +6,9 @@
 2025-03-29 18:19:06 - [0;34mINFO: Adding, committing, and pushing changes...[0m
 2025-03-29 18:19:07 - [0;32mSUCCESS: Successfully pushed the changes to the remote repository.[0m
 2025-03-29 18:19:07 - [0;32mSUCCESS: Update and push script completed![0m
+2025-03-29 19:38:12 - [0;34mINFO: Starting update and push script...[0m
+2025-03-29 19:38:12 - [0;34mINFO: Pulling the latest changes from the remote repository...[0m
+2025-03-29 19:38:12 - [0;31mERROR: Failed to pull the latest changes.[0m
+2025-03-29 19:42:47 - [0;34mINFO: Starting update and push script...[0m
+2025-03-29 19:42:47 - [0;34mINFO: Pulling the latest changes from the remote repository...[0m
+2025-03-29 19:42:47 - [0;31mERROR: Failed to pull the latest changes.[0m
