@@ -14,7 +14,7 @@ def run_command(command):
     return result.stdout
 
 # Authenticate using the personal access token
-token = os.getenv('GITHUB_TOKEN')
+token = os.getenv('PAT')
 g = Github(token)
 
 repo_name = "krackn88/hybrid-dev-beta"
