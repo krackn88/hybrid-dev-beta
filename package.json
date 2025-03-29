@@ -3,6 +3,7 @@
   "displayName": "Hybrid Extension",
   "description": "A VSCode extension for the Hybrid project.",
   "version": "0.0.1",
+  "publisher": "krackn88",
   "engines": {
     "vscode": "^1.60.0"
   },
