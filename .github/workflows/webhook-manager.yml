@@ -1,0 +1,67 @@
+name: Webhook Manager
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: 'Action to perform'
+        required: true
+        default: 'list'
+        type: choice
+        options:
+          - list
+          - create
+          - delete
+      webhook_id:
+        description: 'Webhook ID (for delete action)'
+        required: false
+        default: ''
+
+jobs:
+  webhook-manager:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List webhooks
+        if: ${{ github.event.inputs.action == 'list' }}
+        run: |
+          echo "Listing existing webhooks..."
+          gh api repos/${{ github.repository }}/hooks | jq -r '.[] | "ID: \(.id) | URL: \(.config.url) | Events: \(.events)"'
+      
+      - name: Create webhook
+        if: ${{ github.event.inputs.action == 'create' }}
+        run: |
+          echo "Creating new webhook..."
+          
+          # Generate a secure webhook secret
+          WEBHOOK_SECRET=$(openssl rand -hex 20)
+          
+          # Create the webhook
+          RESPONSE=$(gh api -X POST repos/${{ github.repository }}/hooks -f name="web" -f active=true -f events="push" -F config.url="https://your-webhook-url.example.com" -F config.content_type="json" -F config.secret="$WEBHOOK_SECRET")
+          
+          # Extract and display webhook ID
+          WEBHOOK_ID=$(echo "$RESPONSE" | jq -r '.id')
+          
+          if [ "$WEBHOOK_ID" != "null" ]; then
+            echo "Webhook created successfully!"
+            echo "Webhook ID: $WEBHOOK_ID"
+            echo "Webhook Secret: $WEBHOOK_SECRET"
+            echo ""
+            echo "IMPORTANT: Save this webhook secret securely - it won't be shown again!"
+          else
+            echo "Error creating webhook:"
+            echo "$RESPONSE" | jq
+            exit 1
+          fi
+      
+      - name: Delete webhook
+        if: ${{ github.event.inputs.action == 'delete' && github.event.inputs.webhook_id != '' }}
+        run: |
+          echo "Deleting webhook ID: ${{ github.event.inputs.webhook_id }}"
+          
+          STATUS=$(gh api -X DELETE repos/${{ github.repository }}/hooks/${{ github.event.inputs.webhook_id }} -o /dev/null -w "%{http_code}")
+          
+          if [ "$STATUS" -eq 204 ]; then
+            echo "Webhook deleted successfully!"
+          else
+            echo "Error deleting webhook. HTTP Status: $STATUS"
+            exit 1
