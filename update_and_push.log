@@ -1,0 +1,6 @@
+2025-03-29 18:19:05 - [0;34mINFO: Starting update and push script...[0m
+2025-03-29 18:19:05 - [0;34mINFO: Pulling the latest changes from the remote repository...[0m
+2025-03-29 18:19:06 - [0;32mSUCCESS: Successfully pulled the latest changes.[0m
+2025-03-29 18:19:06 - [0;34mINFO: Updating CHANGELOG.md and TODO.md...[0m
+2025-03-29 18:19:06 - [0;32mSUCCESS: Successfully updated CHANGELOG.md and TODO.md.[0m
+2025-03-29 18:19:06 - [0;34mINFO: Adding, committing, and pushing changes...[0m

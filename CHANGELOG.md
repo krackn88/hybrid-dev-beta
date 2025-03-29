@@ -12,3 +12,5 @@
 - Updated `CHANGELOG.md` and `TODO.md` to reflect ongoing tasks and changes.
 - Integrated GitHub Actions setup script (`setup_github_actions.sh`).
 - Added `start_webhook.sh` to start the webhook handler.
+- Set up a test webhook in GitHub.
+- Triggered the webhook for testing.
